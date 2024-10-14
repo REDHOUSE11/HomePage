@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px; /* Doubled the font size */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px; /* Add space on the right */
+}
+
+.signup i {
+    margin-right: 10px; /* Spacing between icon and text */
+    font-size: 36px; /* Doubled the icon size */
+}
+
+.signup span {
+    font-size: 36px; /* Doubled the "Login" text size */
+}
+
+
+
+.main-content {
+    flex: 1;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    width: 100%;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
